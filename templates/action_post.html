@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="\favicon.ioc">
+    <title>VIEW BLOGS</title>
+</head>
+
+<body style="background-color:skyblue; text-align:center;">
+    <header></header>
+    <main>
+        <section>
+            <div>
+                <h1>ALL POSTS</h1>
+            </div>
+            <div>
+                {% for i in res %}
+                <hr>
+                <p><b>Author name</b><br>{{i[1]}}</p>
+                <p><b>Title</b><br>{{i[2]}}</p>
+                <p><b>Blog</b><br>{{i[3]}}</p>
+                <hr>
+                {% endfor %}
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

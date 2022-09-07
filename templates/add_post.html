@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="\favicon.ioc">
+    <title>ADD POST</title>
+</head>
+
+<body  style="background-color:skyblue; text-align:center;">
+    <header></header>
+    <main>
+        <section>
+            <div>
+                <h1>ADD NEW BLOG POST</h1>
+            </div>
+            <div>
+                <form action="/save_post_link" method="post">
+                Author name: <input type="text" name="author_name" value="{{res}}" readonly><br><br>
+                Blog title: <input type="text" name="blog_title"><br><br>
+                Blog: <textarea name="blog" cols="30" rows="5">type here...</textarea><br><br>
+                <input type="submit" value="add">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
